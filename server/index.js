@@ -1,4 +1,5 @@
 require('dotenv').config(); //reads the .env file and load process.env
+// console.log('Cloudinary config:', process.env.CLOUDINARY_CLOUD_NAME, process.env.CLOUDINARY_API_KEY?.slice(0,4));
 const express = require('express');
 const cors = require('cors');//allows react to  exprress communication without this browser blocks requests
 const connectDB = require('./config/db'); //imports db functions

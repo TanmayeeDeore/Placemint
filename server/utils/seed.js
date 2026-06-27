@@ -11,8 +11,8 @@ const seed = async () => {
   console.log('Connected to DB');
 
   // Clear existing
-  await Promise.all([User, Profile, Job, Application].map(m => m.deleteMany({})));
-  console.log('Cleared collections');
+  // await Promise.all([User, Profile, Job, Application].map(m => m.deleteMany({})));
+  // console.log('Cleared collections');
 
   // Teacher
   const teacher = await User.create({ name: 'Prof. Sharma', email: 'teacher@demo.com', password: 'password123', role: 'teacher' });
